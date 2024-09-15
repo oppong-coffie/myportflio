@@ -9,6 +9,7 @@ import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 import Skills from './Skills';
 import { DownloadOutlined } from '@ant-design/icons';
+import Contact from './Contact';
 
 const MainSection = (reg, res) =>{
     const [size, setSize] = useState('large'); // default is 'middle'
@@ -90,6 +91,13 @@ const MainSection = (reg, res) =>{
             </div>
 
             <Skills />
+            <div 
+             data-aos="zoom-in"
+             data-aos-easing="linear"
+             data-aos-duration="3000"
+             >
+            < Contact />
+            </div>
         </div>
     )
 }
